@@ -11,7 +11,7 @@ const App = () => {
   <>
     <BrowserRouter>
 
-    <div className=" bg-gray-950 h-screen ">
+    <div className=" bg-gray-950 h-full ">
      <Navbar/>
     
     <Routes>
