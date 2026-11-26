@@ -4,7 +4,7 @@ import { Home,ShoppingCart} from 'lucide-react';
 const Navbar = () => {
   return (
     <>
-    <header className="sticky top-0 flex justify-between px-5 py-2 text-orange-400  border-b ">
+    <header className="sticky top-0 flex bg-gray-900 justify-between px-5 py-2 text-orange-400  border-b ">
       <Link className="flex  gap-1 ">
       <Home className="text-orange-400 "/>
       <h1 className="text-white ">Tech <span className="text-orange-400  gap-1 ">Store </span></h1>
