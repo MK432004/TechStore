@@ -16,8 +16,8 @@ const ProductDetail = () => {
       <CategoryFilter/>
     <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 justify-center items-center  text-white  "> 
       
-      {productdata.map((elem,index) => (
-       <ProductCard key={index}  product={elem}/>
+      {productdata.map((product,index) => (
+       <ProductCard key={index}  product={product}/>
      ))}
 
     </div>
