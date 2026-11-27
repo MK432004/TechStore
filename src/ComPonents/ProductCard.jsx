@@ -13,17 +13,20 @@ const ProductCard = ({product}) => {
        <Link to="/product"  className=" relative cursor-pointer overflow-hidden " >
         <img src={product.image} alt={product.name} className=" w-full h-56 object-center  object-cover   transition duration-500 group-hover:scale-110 group-hover:opacity-90  ">
           </img>
-         
-    {/* Product Price */}
-    <p className="bg-orange-600 text-white font-bold text-lg py-2 px-5 shadow-lg">
-      ₹{product.price.toFixed(2)}
-    </p>
-
-    {/* Product Name */}
-    <h3 className="text-white text-lg font-semibold p-4 hover:text-orange-400 transition duration-300">
-      {product.name}
-    </h3>
+          <div  className=" absolute bg-orange-500 px-5 py-2 text-white text-xl font-extrabold rounded-tr-xl shadow-lg  bottom-0  left-0 ">
+            <p>{product.price}</p>
+          </div>
         </Link>
+        <div className="flex flex-col p-5  grow ">
+          <Link to="/product">
+          <h3 className=" text-2xl font-extrabold text-white mb-2 cursor-pointer hover:text-orange-400 transition
+          duration-200 line-clamp-1 ">{product.name}</h3>
+          </Link>
+          <p className=" caret-lime-3 ">{product.description}</p>
+          <div className=" items-center flex mb-4 ">
+            <span className="border  px-3 py-1  ">{product. category}</span>
+          </div>
+        </div>
        
        
       
